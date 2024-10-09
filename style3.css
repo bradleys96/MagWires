@@ -1,0 +1,261 @@
+.roboto-slab {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.mulish{
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.accent{
+    color: #def71c;
+}
+
+.carousel-control{
+    color: #def71c;
+    opacity: 100%;
+}
+
+
+.navbar li a{
+    font-weight: 900;
+    font-size: 16px;
+    font-family: Mulish;
+}
+
+
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+margin-bottom: 0;
+border-radius: 0;
+background-color: black;
+
+}
+
+#bookUs-img{
+    width: 250px; 
+    height: 250px;
+    display: block;
+    margin-left: 20px;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+#bookUs-heading{
+    text-align: center;
+    font-weight: 900;
+    color:#def71c;
+    font-size: 28px;
+    font-family: Mulish;
+}
+
+#bookUs-p{
+    font-weight: 600;
+    font-family: Mulish;
+    font-size: 18px;
+}
+
+#bookUs-content input{
+    margin-bottom: 20px;
+}
+
+#what-we-do{
+
+    background-color: #000000;
+    margin: auto;
+    
+}
+
+#what-we-do-title{
+    font-size: 40px;
+    font-family: Mulish;
+    font-weight: 900;
+    color: #ffffff;
+    text-align: left;
+    
+
+}
+
+.card{
+    padding: 30px;
+    background-color: rgb(234,234,234);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    
+}
+
+
+
+
+.card-heading{
+    font-size: 30px; 
+    font-weight: 700;
+    color: black;
+    font-family: Roboto ;
+}
+
+.card-p{
+    font-size: 20px;
+    font-family: Mulish;
+    color: black;
+    font-weight: 700;
+}
+
+#whatwedo-cards{
+    margin: auto;
+    
+}
+
+.what-we-do-img{
+    width:100%; 
+    height: 80%;
+    border-radius: 5px; 
+
+}
+
+#why-choose-us{
+    background-color: rgb(234,234,234);
+    padding: 5px;
+    color: #000000;
+}
+
+#why-choose-us-title{
+    font-size: 40px;
+    font-family: Mulish ;
+    font-weight: 900;
+    color: black;
+    text-align: left;
+}
+
+#why-choose-us-img{
+    width:33%; 
+    height: 33%;  
+    margin-left:auto;
+    margin-right: auto;
+    display: block;
+}
+
+.icon-heading{
+    font-size: 24px; 
+    font-weight: 700;
+    color: black;
+    font-family: Roboto ;
+}
+
+
+#our-work{
+    background-color: rgb(234,234,234);
+    padding: 10px;
+    color: #000000;
+
+}
+
+#project-img{
+    border-radius: 5px;
+    width: 300px;
+    height:200px;
+    cursor: pointer;
+}
+
+
+.modal-dialog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.modal-content{
+    background-color: #000000!important;
+    color: white;
+    padding: 20px;
+
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between; /* Align title and close button on opposite sides */
+    align-items: center; /* Vertically center both the title and close button */
+    padding:5px;
+}
+
+.close {
+    margin-left: auto;
+    font-size: 30px;
+    color: white!important; /* Adjust color if needed */
+
+    cursor: pointer;
+    outline: none;
+}
+
+.modal-title {
+    margin-right: auto;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: Mulish;
+    float: left;
+}
+
+
+
+/* Add a gray background color and some padding to the footer */
+#footer {
+    background-color: black;
+    padding: 25px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#footer-heading{
+    font-size: 22px;
+    font-weight: 700;
+    padding: 5px;
+}
+
+#socials{
+    border-bottom: 2px solid white;
+    padding-bottom: 15px;
+    justify-content: space-between;
+}
+
+#socials a{
+    text-decoration: none;
+}
+
+#social-icons{
+    width:35px;
+    height: 35px;
+}
+#myCarousel{
+    height: 90vh;
+}
+
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: 0 auto;
+    min-height: 90%;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+    .carousel-caption {
+    display: none; 
+    }
+}
+
+
+@media (max-width: 1600px){
+    #myCarousel{
+        height: 90vh; 
+        margin-bottom: 125px;
+    }
+}
+
+

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        
+
+</head>
+<body style="background-color: black;">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: black;">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a href="" class="navbar-brand" style="font-weight: 800; color: white; font-size: 30px; font-family:Mulish;">
+                Mag<span class="accent">Wires</span>
+            </a>
+        
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+
+            
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#what-we-do">About</a></li>
+                <li><a href="#our-work">Projects</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" style="margin-right: 10px; font-size:26px;" data-toggle="modal" data-target="#bookUsModal"><span class="accent">Book Us</span></a></li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+       
+        
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="phone-background1.png" alt="Image">
+                      
+            </div>
+
+            <div class="item">
+                <img  src="phone-background2.png" alt="Image">
+                 
+            </div>
+
+          
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" style="color: #def71c; opacity: 100%;">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" style="color: #def71c; opacity: 100%;"">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="modal fade" id="bookUsModal" tabindex="-1" role="dialog" aria-labelledby="bookUsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <img src="magwires-logo.jpeg" alt="" id="bookUs-img" >
+                    </div>
+                    <div id="bookUs-content" class="col-sm-12 col-md-6 col-lg-6">
+                        <h2 id="bookUs-heading">Book Us</h2>
+                        <p id="bookUs-p">Fill out your details below and we will get in touch to discuss your work</p>
+                        <form>
+                            <label for="fname">Name</label><br>
+                            <input type="text" id="fname" name="fname"><br>
+                            <label for="lname">Phone Number</label><br>
+                            <input type="number" id="num" name="lname"><br>
+                            <label for="lname">Brief Work Description</label><br>
+                            <input type="text" id="work" name="lname">
+                          </form>
+                          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section  id="what-we-do">    
+        <div class="container text-center">
+            <h3 id="what-we-do-title">What <span class="accent">We Do.</span></h3><br>
+            <div id="whatwedo-cards" class="row">
+                <div class="col-sm-12 col-md-12 col-lg-4" >
+                    <div class="card">
+                        <img src="domestic-thumbnail.png" class="what-we-do-img img-responsive"  alt="Image">
+                        <h2 class="card-heading">Domestic Solutions</h2>
+                        <p class="card-p">We offer bespoke electrical solutions tailored to your family's home, ensuring safety, comfort, and functionality. With competitive pricing, we deliver high-quality installations and upgrades that fit both your needs and budget.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4"> 
+                    <div class="card">
+                        <img src="commercial-thumbnail3.png" class="what-we-do-img img-responsive"  alt="Image">
+                        <h2 class="card-heading">Commercial Solutions</h2>
+                        <p class="card-p">Your business deserves the best, and that is why we offer top-tier electrical solutions tailored to your business. With a focus on reliability and efficiency, we deliver expert services at competitive prices, ensuring you can focus on what matters.</p>    
+                    </div>
+                </div>
+                <div class="col-csm-12 col-md-12 col-lg-4">
+                    <div class="card">
+                        <img src="bespoke-cabins-thumbnail3.png" class="what-we-do-img img-responsive"  alt="Image">
+                        <h2 class="card-heading">Bespoke Cabins</h2>
+                        <p class="card-p">Our bespoke cabins provide an opportunity to create your very own dream space, fully customizable to fit your lifestyle and needs. With top-quality craftsmanship and attention to detail, we ensure that your cabin is not only functional but also a beautiful extension of your home.</p>     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br/><br/>
+
+
+    <section  id="why-choose-us">    
+        <div class="container text-center">
+            <h3 id="why-choose-us-title">Why Choose Us.</h3><br>
+            <div id="whatwedo-cards" class="row">
+                <div class="col-sm-12 col-md-12 col-lg-4" >
+                    <div class="card">
+                        <img src="experience.png" class="img-responsive" id="why-choose-us-img"  alt="Image">
+                        <h2 class="icon-heading">Experienced Proffesionals</h2>      
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4"> 
+                    <div class="card">
+                        <img src="happy-customers.png" class="img-responsive" id="why-choose-us-img"  alt="Image">
+                        <h2 class="icon-heading">100+ Happy Customers</h2>
+                       
+                    </div>
+                </div>
+                <div class="col-csm-12 col-md-12 col-lg-4">
+                    <div class="card">
+                        <img src="pricing.png" class="img-responsive"  id="why-choose-us-img"  alt="Image">
+                        <h2 class="icon-heading">Competitive Pricing</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br/><br/>
+
+    <section  id="reviews">    
+        <div class="container text-center">
+            <h3 id="what-we-do-title">Dont Take <span class="accent">Our Word</span> For It.</h3><br>
+            <div id="whatwedo-cards" class="row">
+                <div class="col-sm-12 col-md-12 col-lg-4" >
+                    <div class="card">
+                        <img src="rating.png" class="img-responsive" id="why-choose-us-img"  alt="Image">
+                        <p class="card-p">We hired stephen to put in a outdoor power socket in. They did an amazing job and were very professional from first contact to the end. Thank you!</p><br/>
+                        <p class="card-p">Christina</p>      
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4"> 
+                    <div class="card">
+                        <img src="rating.png" class="img-responsive" id="why-choose-us-img"  alt="Image">
+                        <p class="card-p">Top man came out within 10 minutes sorted the problem highly recommend.</p><br/>
+                        <p class="card-p">Jane</p>
+                       
+                    </div>
+                </div>
+                <div class="col-csm-12 col-md-12 col-lg-4">
+                    <div class="card">
+                        <img src="rating.png" class="img-responsive"  id="why-choose-us-img"  alt="Image">
+                        <p class="card-p">Excellent service, our wiring problems were sorted quickly and professionally.  I would definitely recommend Magwires Thanks.</p><br/>
+                        <p class="card-p">Kristine</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br/><br/>
+
+
+    <section  id="our-work">    
+        <div class="container text-center">
+            <h3 id="why-choose-us-title">Projects.</h3><br>
+            <div id="whatwedo-cards" class="row">
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="card">
+                        <img src="merchantsquare.jpg" class="img-responsive" id="project-img"  alt="Merchant Square"  data-toggle="modal" data-target="#merchantModal">
+                        <h2 class="card-heading">Merchant Square</h2>      
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4"> 
+                    <div class="card">
+                        <img src="home-background.jpeg" class="img-responsive" id="project-img"  alt="Piano Lighting" data-toggle="modal" data-target="#pianoModal">
+                        <h2 class="card-heading">Piano Lighting</h2>
+                       
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="card">
+                        <img src="merchantsquare.jpg" class="img-responsive" id="project-img"  alt="Merchant Square"  data-toggle="modal" data-target="#merchantModal">
+                        <h2 class="card-heading">Merchant Square</h2>      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Merchant Square Modal -->
+    <div class="modal fade" id="merchantModal" tabindex="-1" role="dialog" aria-labelledby="merchantModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="merchantModalLabel">Merchant Square Project</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="merchantsquare.jpg" class="img-responsive" alt="Merchant Square Image 1">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="merchant.jpeg" class="img-responsive" alt="Merchant Square Image 2">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="magwires-logo.jpeg" class="img-responsive" alt="Merchant Square Image 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Piano Lighting Modal -->
+    <div class="modal fade" id="pianoModal" tabindex="-1" role="dialog" aria-labelledby="pianoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pianoModalLabel">Piano Lighting Project</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="byday.jpeg" class="img-responsive" alt="Piano Lighting Image 1">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="bynight.jpeg" class="img-responsive" alt="Piano Lighting Image 2">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="home-background.jpeg" class="img-responsive" alt="Piano Lighting Image 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Merchant Square Modal -->
+    <div class="modal fade" id="merchantModal" tabindex="-1" role="dialog" aria-labelledby="merchantModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="merchantModalLabel">Merchant Square Project</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="merchantsquare.jpg" class="img-responsive" alt="Merchant Square Image 1">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="merchant.jpeg" class="img-responsive" alt="Merchant Square Image 2">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="magwires-logo.jpeg" class="img-responsive" alt="Merchant Square Image 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <!-- Footer -->
+    <footer  id="footer" class="text-center text-lg-start bg-body-tertiary text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div id="socials" class="me-5 d-none d-lg-block">
+           
+
+            <a href="https://www.facebook.com/profile.php?id=61554868138598" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"><img id="social-icons" src="facebook.png" alt="facebook"></i>
+            </a>
+            <a href="https://www.tiktok.com/@mag.wires_electrical" class="me-4 text-reset">
+            <i class="fab fa-tiktok"><img id="social-icons" src="tiktok.png" alt="facebook"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"><img id="social-icons" src="instagram.png" alt="facebook"></i>
+            </a>
+                
+        </div>
+        <!-- Left -->
+    
+        
+        <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+    
+        <!-- Section: Links  -->
+        <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 id="footer-heading" class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Magwires Electrical
+                </h6>
+                <p>
+                We are proud to bring electrical solutions to all of our clients. 
+                </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mb-4">
+                <!-- Links -->
+                <h6 id="footer-heading" class="text-uppercase fw-bold mb-4">
+                Services
+                </h6>
+                <p>
+                <a href="#what-we-do" class="text-reset">Domestic Solutions</a>
+                </p>
+                <p>
+                <a href="#what-we-do" class="text-reset">Commercial Solutions</a>
+                </p>
+                <p>
+                <a href="#what-we-do" class="text-reset">Call Outs</a>
+                </p>
+                <p>
+                <a href="#what-we-do" class="text-reset">Bespoke Cabins</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+    
+            
+    
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 id="footer-heading" class="text-uppercase fw-bold mb-4">Contact Us</h6>
+                
+                <p>
+                <i class="fas fa-envelope me-3"></i>
+                magwireselectrical@gmail.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                
+            </div>
+            <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        </section>
+        <!-- Section: Links  -->
+    
+        
+    </footer>
+    <!-- Footer -->
+
+    <script>
+        // Function to dynamically load images based on screen size
+        function updateCarouselImages() {
+            const carouselItems = document.querySelectorAll('.carousel-inner .item img');
+    
+            if (window.innerWidth <= 768) {
+                // Small screen images
+                carouselItems[0].src = 'phone-background1.png';
+                carouselItems[1].src = 'phone-background2.png';
+            } else {
+                // Large screen images
+                carouselItems[0].src = 'homepage-edit13.png';
+                carouselItems[1].src = 'merchantsquare.jpg';
+            }
+        }
+    
+        // Run the function when the page loads
+        window.addEventListener('load', updateCarouselImages);
+    
+        // Run the function when the screen is resized
+        window.addEventListener('resize', updateCarouselImages);
+    </script>
+
+</body>
+</html>
